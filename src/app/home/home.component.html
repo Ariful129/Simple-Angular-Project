@@ -1,0 +1,15 @@
+
+
+
+
+<div *ngIf="data" class="cards-container">
+   <!-- Add a search bar [search based on titile] -->
+    <div class="cards">
+      <div *ngFor="let item of data" class="card">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.body }}</p>
+      </div>
+    </div>
+  </div>
+  <p *ngIf="!data">Loading data...</p>
+  
